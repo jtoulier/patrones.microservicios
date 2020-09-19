@@ -4,3 +4,6 @@ Nos guiaremos de los patrones explicados en el excelente libro "Microservices Pa
 
 Empezaremos con un proyecto simple, funcional pero que no implementa ningún patrón y veremos cómo poco a poco ese proyecto tom forma
 
+# Referencias
+https://microservices.io/
+https://microservices.io/book
