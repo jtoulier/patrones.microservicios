@@ -1,3 +1,5 @@
+![Alquicleta](../images/alquicleta.png "Alquicleta")
+
 # Especificación Funcional
 
 ## Levantamiento de información
