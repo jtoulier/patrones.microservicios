@@ -23,16 +23,18 @@ Los requerimientos han sido divididos en dos grupos iniciamente:
 * El *cletero* llegará a la estación origen, se acercará al encargado de la estación, éste escaneará el código QR mostrado por el *cletero*, y visualizará en el sistema los datos de la reserva. En caso siga siendo válida, busca la bicicleta reservada, revisa el estado delante del *cletero* y en caso todo esté bien, le entrega la bicicleta y ésta pasa al estado **en uso**.
 * Cuando el *cletero* llegue a la estación destino, se acercará al encargado, éste escaneará el código QR mostrado por el *cletero* y visualizará en el sistema los datos de la reserva. Verificará que la bicicleta devuelta sea la asignada, revisará el estado de la bicicleta y de estar todo conforme, da por finalizado el alquiler, asigna la bicicleta a la estación y pasa la bicicleta al estado **disponible**.
 * En caso una bicicleta esté en mal estado, el encargado de la estación pasa dicha bicicleta al estado **en revisión** indicando las fallas y el sistema le notificará por SMS al administrador del sistema para que tome las medidas correctivas pertinentes. Estas medidas se harán por fuera del sistema.
-* En casi una bicicleta sea robada o esté en un estado irrecuperable será pasada al estado **desactivada**.
+* En caso una bicicleta sea robada o esté en un estado irrecuperable será pasada al estado **desactivada**.
 * Cada alquiler tendrá como duración máxima dos horas, contadas a partir del momento que la bicicleta pasa al estado **en uso**. En caso un *cletero* se exceda este tiempo máximo de alquiler, será sancionado con siete días de deshabilitación. Una segunda ocurrencia de retraso se sanciona con quince días de suspensión. En caso exista una tercera ocurrencia será deshabilitado definitivamente.
 
 ### Requerimientos no funcionales
-* El sistema será un página web y alojada íntegramente en alguna nube como AWS o Azure.
-* El login será implementado con alguna red social como Google o Facebook.
-* El código QR debe estar encriptado para evitar que un usuario con intenciones delincuenciales genere códigos QR falsos
+* El sistema será una página web y alojada íntegramente en alguna nube como AWS o Azure. En un futuro podría desarrollarse una app móvil.
+* El login será implementado con alguna red social como Google y/o Facebook.
+* El código QR debe estar encriptado para evitar que un usuario con intenciones delincuenciales genere códigos QR falsos.
 
 ## Referencias
 * [Leer código QR en una aplicación web (cambiar qrcode -> qrcodex)](https://www.sitepoint.com/create-qr-code-reader-mobile-website/)
+* [Login con Google](https://developers.google.com/identity/sign-in/web/sign-in)
+* [Login con Facebook](https://developers.facebook.com/docs/facebook-login/web)
 
 ## Navegación
 [Volver a índice](../README.md)
